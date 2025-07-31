@@ -1,22 +1,16 @@
 <!-- SFC 单文件组件 -->
 <!-- 预编译 打包时会把模板转换为render函数效率高 -->
 <template>
-  <div class="app-container">
-    <div class="app-aside">
-      <SiteAside />
-    </div>
-    <div class="app-main">
-      <!-- <router-view /> -->
-      <RouterView />
-    </div>
+  <div class="test-container">
+    <SiteAside></SiteAside>
   </div>
 </template>
 
 <script>
-import SiteAside from "@/components/SiteAside";
+import SiteAside from "./";
 import "@/styles/global.less";
 export default {
-  name: "app",
+  name: "SiteAsideTest",
   components: {
     SiteAside,
   },
@@ -25,7 +19,9 @@ export default {
       //menuData,
     };
   },
-  created() {},
+  created() {
+   
+  },
   methods: {
     clickMenuHandler() {
       // this.menuData.forEach((menu)=>{
@@ -40,23 +36,12 @@ export default {
 };
 </script>
 
-<style scoped lang="less">
-.app-container {
-  display: flex;
+<style scoped>
+.test-container {
+  width: 250px;
   height: 100%;
-  width: 100%;
-  background: #f0f2f5;
-
-  .app-aside {
-    width: 250px;
-    height: 100%;
-    /* margin: 0 auto; */
-    /* background: #000; */
-    border: 1px solid;
-  }
-  .app-main {
-    flex: 1;
-    padding: 20px;
-  }
+  /* margin: 0 auto; */
+  /* background: #000; */
+  border: 1px solid
 }
 </style>

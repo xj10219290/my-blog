@@ -8,11 +8,18 @@
     "lint": "vue-cli-service lint",
     "test:Avatar": "vue serve ./src/components/Avatar/test.vue",
     "test:Icon": "vue serve ./src/components/Icon/test.vue",
-    "test:Pager": "vue serve ./src/components/Pager/test.vue"
+    "test:Pager": "vue serve ./src/components/Pager/test.vue",
+    "test:Empty": "vue serve ./src/components/Empty/test.vue",
+    "test:ImageLoader": "vue serve ./src/components/ImageLoader/test.vue",
+    "test:Contact": "vue serve ./src/components/SiteAside/Contact/test.vue",
+    "test:Menu": "vue serve ./src/components/SiteAside/Menu/test.vue",
+    "test:SiteAside": "vue serve ./src/components/SiteAside/test.vue",
+    "test:Message": "vue serve ./src/components/Message/test.vue"
   },
   "dependencies": {
     "core-js": "^3.6.5",
-    "vue": "^2.6.11"
+    "vue": "^2.6.11",
+    "vue-router": "^3.6.5"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "~4.5.8",
